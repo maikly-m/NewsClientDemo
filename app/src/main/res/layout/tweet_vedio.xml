@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_tweet_vedio"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray"
+              android:orientation="vertical"
+              android:padding="5dp" >
+
+    <GridView
+        android:id="@+id/gv_tweet_vedio"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="2" >
+
+    </GridView >
+
+    <LinearLayout
+        android:id="@+id/foot_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <ProgressBar
+            android:id="@+id/pb_refresh"
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/progressbar_circle" />
+
+        <TextView
+            android:id="@+id/tv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="正在加载......"
+            android:textSize="20sp" />
+    </LinearLayout >
+
+    <TextView
+        android:id="@+id/tv_more_content"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/secondary_text"
+        android:gravity="center"
+        android:text="点击加载更多内容......"
+        android:textSize="16sp"
+        android:visibility="gone"
+        />
+</LinearLayout >

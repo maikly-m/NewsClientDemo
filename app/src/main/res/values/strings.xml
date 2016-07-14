@@ -1,0 +1,11 @@
+<resources >
+    <string name="app_name" >NewsClientDemo</string >
+    <string name="open" >open</string >
+    <string name="close" >close</string >
+    <string name="search_info" >神马搜索</string >
+    <string name="nothing" >还没有内容哦</string >
+    <string name="title" >NewsDemo</string >
+    <string name="twiceclick_exit" >再点击一次退出</string >
+    <string name="network_error" >连接服务器失败，请检查网络连接</string >
+    <string name="no_more" >没有更多了</string >
+</resources >

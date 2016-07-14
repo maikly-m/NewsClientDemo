@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_listview03"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="6dp" >
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:id="@+id/tv_listview03_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/primary_text"
+        android:textSize="15sp"
+        />
+
+    <ImageView
+        android:layout_marginTop="2dp"
+        android:id="@+id/iv_listview03"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_bg"/>
+
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        >
+        <TextView
+            android:id="@+id/tv_listview03_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_listview03_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tag_bg_color"
+            android:maxLines="1"
+            android:textColor="@color/primary"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_listview03_votecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/tv_listview03_tag"
+            android:maxLines="1"
+            android:textSize="12sp"
+            />
+
+    </RelativeLayout >
+
+</LinearLayout >

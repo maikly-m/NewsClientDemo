@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_listview02"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="6dp" >
+    <TextView
+        android:id="@+id/tv_listview02_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textSize="15sp"
+        android:textColor="@color/primary_text"
+        />
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <ImageView
+
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:id="@+id/iv_listview02_01"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"/>
+        <ImageView
+
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:id="@+id/iv_listview02_02"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"/>
+        <ImageView
+
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:id="@+id/iv_listview02_03"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"/>
+
+    </LinearLayout >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        >
+        <TextView
+            android:id="@+id/tv_listview02_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/tv_listview02_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:background="@drawable/tag_bg_color"
+            android:textColor="@color/primary"
+            />
+
+        <TextView
+            android:id="@+id/tv_listview02_votecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_listview02_tag"
+            android:layout_marginRight="5dp"
+            android:maxLines="1"
+            android:textSize="12sp"
+            />
+
+    </RelativeLayout >
+
+</LinearLayout >

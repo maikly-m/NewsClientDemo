@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+               >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_news_detail"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary" >
+
+    </android.support.v7.widget.Toolbar >
+    <RelativeLayout
+        android:id="@+id/rl_news_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textSize="18sp" />
+
+        <WebView
+            android:layout_below="@id/tv_detail_title"
+            android:id="@+id/wv_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        </WebView >
+        <ProgressBar
+            android:layout_centerInParent="true"
+            android:id="@+id/pb_news_detail"
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/progressbar_circle"/>
+    </RelativeLayout >
+
+</LinearLayout >
