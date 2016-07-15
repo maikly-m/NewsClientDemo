@@ -1,13 +1,12 @@
 package com.example.mrh.newsclientdemo.ui.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.TranslateAnimation;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
@@ -24,6 +23,7 @@ import com.example.mrh.newsclientdemo.bean.TweetBean;
 import com.example.mrh.newsclientdemo.constant.Constant;
 import com.example.mrh.newsclientdemo.http.HttpClient;
 import com.example.mrh.newsclientdemo.ui.MainActivity;
+import com.example.mrh.newsclientdemo.ui.VideoActivity;
 import com.example.mrh.newsclientdemo.utils.Utils;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.TextHttpResponseHandler;
@@ -156,7 +156,10 @@ public class TweetFragment extends BaseFrameFragment {
         mGv_tweet_vedio.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick (AdapterView<?> parent, View view, int position, long id) {
-
+                Intent intent = new Intent(getContext(), VideoActivity.class);
+                TweetBean.Vedio vedio = mVedios.get(position);
+                intent.putExtra("vedio", vedio);
+                startActivity(intent);
             }
         });
         //下拉刷新

@@ -1,5 +1,6 @@
 package com.example.mrh.newsclientdemo.bean;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -8,7 +9,7 @@ import java.util.List;
 public class TweetBean {
 
     public List<Vedio> vedios;
-    public class Vedio {
+    public class Vedio implements Serializable{
 
         public String cover;
         public String description;
